@@ -1,0 +1,184 @@
+/* Name: Arjun Pandya
+   Assignment: Project 2
+   Date: September 29, 2026
+ */
+
+body { 
+  font-family: Arial, sans-serif; 
+  margin: 0; 
+  padding: 0; 
+  background-color: #f9f9f9; 
+}
+
+header { 
+  background-color: #333; 
+  color: white; 
+  padding: 20px; 
+  text-align: center; 
+}
+
+/* Navigation Requirement */
+nav { 
+  background-color: #555; 
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+  padding: 15px; 
+}
+
+nav a { 
+  color: white; 
+  text-decoration: none; 
+  font-weight: bold; 
+}
+
+nav a:hover { 
+  text-decoration: underline; 
+}
+
+main { 
+  padding: 20px; 
+  max-width: 1000px; 
+  margin: auto; 
+  background: white; 
+}
+
+/* Footer Requirement */
+footer { 
+  background-color: #333; 
+  color: white; 
+  text-align: center; 
+  padding: 20px; 
+  margin-top: 20px; 
+}
+
+.footer-small {
+  font-size: 0.85em;
+  color: #ccc;
+  margin-top: 8px;
+}
+
+.social-buttons a { 
+  color: #f4b41a; 
+  margin: 0 10px; 
+  text-decoration: none; 
+}
+
+/* CSS Flexbox Requirement */
+.flex-container { 
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap; 
+  margin: 20px 0; 
+}
+
+.list-column { 
+  width: 45%; 
+  background-color: #f4f4f4; 
+  padding: 15px; 
+  border-radius: 5px; 
+}
+
+/* Table Requirement */
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin: 20px 0; 
+}
+
+th, td { 
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  text-align: center; 
+}
+
+th { 
+  background-color: #eee; 
+}
+
+/* --- Form Styling --- */
+form {
+  background-color: #fdfdfd;
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  border: 1px solid #e0e0e0;
+}
+
+form h2 {
+  color: #222;
+  margin-top: 0;
+  text-align: center;
+  border-bottom: 2px solid #f4b41a;
+  padding-bottom: 8px;
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #f4b41a;
+  box-shadow: 0 0 6px rgba(244, 180, 26, 0.5);
+}
+
+input[list] {
+  background-color: #fffdf9;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  width: 100%;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #f4b41a;
+  color: #111;
+}
+
+/* --- Mobile Responsive Design --- */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .list-column {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  form {
+    width: 90%;
+    padding: 18px;
+  }
+
+  iframe {
+    height: 280px;
+  }
+}
