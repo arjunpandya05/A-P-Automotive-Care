@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Shop - Customer Form</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="customers.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>A&P Premium Automotive Care</h1>
+    <p>Customer Information Form</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="parts.html">Parts</a>
+    <a href="forms.html">Customer Form</a>
+  </nav>
+
+  <main>
+    <h2>Submit Your Information</h2>
+    <p>Enter your contact information and vehicle details, then click Submit Customer.</p>
+
+    <form id="customer-form">
+      <label for="customer-name">Full Name</label>
+      <input id="customer-name" name="name" type="text" required>
+
+      <label for="customer-email">Email</label>
+      <input id="customer-email" name="email" type="email" required>
+
+      <label for="customer-phone">Phone</label>
+      <input id="customer-phone" name="phone" type="tel">
+
+      <label for="vehicle">Vehicle (year, make, and model)</label>
+      <input id="vehicle" name="vehicle" type="text">
+
+      <button id="submit-customer" type="submit">Submit Customer</button>
+    </form>
+
+    <p id="form-message" role="status" aria-live="polite"></p>
+    <p>For this lab, submitted customer objects are stored in a JavaScript array and displayed in the browser developer console. They are not sent to a server.</p>
+  </main>
+
+  <footer>
+    <p>Contact Us: (123) 456-7890 | pandya79@students.rowan.edu</p>
+    <div class="social-buttons">
+      <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+    </div>
+    <p>&copy; 2026 Premium Auto Performance</p>
+    <p class="student-credit">Website by Arjun Pandya | <a href="index.html">Website Home</a></p>
+  </footer>
+</body>
+</html>
